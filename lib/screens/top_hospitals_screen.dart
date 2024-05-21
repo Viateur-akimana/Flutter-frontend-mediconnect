@@ -1,9 +1,11 @@
-// lib/screens/top_hospitals_screen.dart
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
 class TopHospitalsScreen extends StatelessWidget {
+  const TopHospitalsScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +14,7 @@ class TopHospitalsScreen extends StatelessWidget {
         children: <Widget>[
           ListTile(
             leading: Image.network('https://via.placeholder.com/100'),
-            title: Text('King Fahad Hospital'),
+            title: Text('King Faisal Hospital'),
             subtitle: Text('Details about the hospital'),
             onTap: () {
               Navigator.pushNamed(context, '/hospitalDetail');

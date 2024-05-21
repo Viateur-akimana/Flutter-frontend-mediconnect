@@ -1,9 +1,11 @@
-// lib/screens/profile_screen.dart
+// ignore_for_file: prefer_const_constructors, 
+
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
 class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: const <Widget>[
               CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage('assets/profile.jpg'),

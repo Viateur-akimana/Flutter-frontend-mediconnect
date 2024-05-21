@@ -1,9 +1,11 @@
-// lib/screens/reservation_queue_screen.dart
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
 class ReservationQueueScreen extends StatelessWidget {
+  const ReservationQueueScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,9 +1,11 @@
-// lib/screens/medication_add_screen.dart
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
 class MedicationAddScreen extends StatelessWidget {
+  const MedicationAddScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

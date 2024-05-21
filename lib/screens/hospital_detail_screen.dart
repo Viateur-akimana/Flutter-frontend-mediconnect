@@ -1,9 +1,11 @@
-// lib/screens/hospital_detail_screen.dart
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
 class HospitalDetailScreen extends StatelessWidget {
+  const HospitalDetailScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +17,7 @@ class HospitalDetailScreen extends StatelessWidget {
             Image.network('https://via.placeholder.com/300'),
             SizedBox(height: 16),
             Text(
-              'King Fahad Hospital',
+              'King Faisal Hospital',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 8),

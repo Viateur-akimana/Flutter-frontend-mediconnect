@@ -1,7 +1,9 @@
-// lib/widgets/footer.dart
+
+
 import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
+   const Footer({super.key});
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -38,7 +40,7 @@ class Footer extends StatelessWidget {
             Navigator.pushNamed(context, '/chatbot');
             break;
           case 2:
-            Navigator.pushNamed(context, '/activity');
+            Navigator.pushNamed(context, '/activity');  
             break;
           case 3:
             Navigator.pushNamed(context, '/notifications');

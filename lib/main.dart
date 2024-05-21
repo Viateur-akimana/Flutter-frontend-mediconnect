@@ -1,4 +1,5 @@
-// lib/main.dart
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
@@ -29,6 +30,7 @@ void main() {
 }
 
 class MediConnectApp extends StatelessWidget {
+  const MediConnectApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

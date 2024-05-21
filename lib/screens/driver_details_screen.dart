@@ -1,9 +1,10 @@
-// lib/screens/driver_details_screen.dart
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
 class DriverDetailsScreen extends StatelessWidget {
+  const DriverDetailsScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,13 +12,13 @@ class DriverDetailsScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          children: <Widget>[
+          children: const <Widget>[
             ListTile(
               leading: CircleAvatar(
                 backgroundImage: NetworkImage('https://via.placeholder.com/150'),
               ),
               title: Text('Patrick'),
-              subtitle: Text('King Fahad Hospital'),
+              subtitle: Text('King Faisal Hospital'),
             ),
             Divider(),
             ListTile(
