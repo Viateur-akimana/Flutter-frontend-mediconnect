@@ -31,6 +31,7 @@ class Footer extends StatelessWidget {
       ],
       currentIndex: 0,
       selectedItemColor: Colors.blue,
+      unselectedItemColor: Colors.black,
       onTap: (index) {
         switch (index) {
           case 0:
