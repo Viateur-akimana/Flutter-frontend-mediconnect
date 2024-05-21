@@ -1,46 +1,43 @@
-// ignore_for_file: prefer_const_constructors, 
+// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import '../widgets/header.dart';
-import '../widgets/footer.dart';
+import 'package:flutter_application_1/widgets/footer.dart';
+import 'package:flutter_application_1/widgets/header.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: Header(),
+      appBar:Header(),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage('assets/profile.jpg'),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'John Doe',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'johndoe@example.com',
-                style: TextStyle(color: Colors.grey),
-              ),
-              SizedBox(height: 20),
-              ListTile(
-                title: Text('Notification: Enabled'),
-              ),
-              ListTile(
-                title: Text('Language: English'),
-              ),
-              ListTile(
-                title: Text('Password: ********'),
-              ),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('assets/profile_picture.png'),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Username',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/profile-edit');
+              },
+              child: Text('Edit Profile'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/profile-settings');
+              },
+              child: Text('Settings'),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: Footer(),

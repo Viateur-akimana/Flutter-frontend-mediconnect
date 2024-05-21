@@ -38,7 +38,7 @@ class MediConnectApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/topHospitals',
+      initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
         '/login': (context) => LoginScreen(),
