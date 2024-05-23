@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:mediconnect/screens/images.dart';
-// import 'package:mediconnect/screens/text.dart';
+import 'package:flutter_application_1/screens/images.dart';
 
 
 class WelcomeScreen extends StatelessWidget {
