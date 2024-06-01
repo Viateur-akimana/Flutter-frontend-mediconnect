@@ -1,12 +1,14 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/cupertino.dart';
-import 'package:get/get.dart';
-import 'package:mediconnect/screens/splashscreen.dart';
+import 'package:flutter_application_1/screens/splash_screen.dart';
+import 'package:get/get.dart'; // Add this import for the Get package
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
   final pageController = PageController();
-  Rx<int> currentPageIndex = 0.obs;
+  RxInt currentPageIndex = 0.obs; // Change Rx<int> to RxInt
   void updatePageIndicator(index) => currentPageIndex.value = index;
 
   void dotNavigationClick(index) {

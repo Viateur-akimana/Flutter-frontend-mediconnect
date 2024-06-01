@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/images.dart';
+import 'package:flutter_application_1/screens/text.dart';
 
 
 class WelcomeScreen extends StatelessWidget {
@@ -47,6 +48,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
             ),
               const SizedBox(height: 20.0,) ,
+              // ignore: sized_box_for_whitespace
               Center(child: Container(
                 width:300.0,
                 height:48.0,

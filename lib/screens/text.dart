@@ -1,5 +1,7 @@
 
 
+// ignore_for_file: constant_identifier_names
+
 class Texts {
   static const OnBoardingtext1 = 'Instantly summon emergency help with just one click for immediate assistance.';
   static const OnBoardingtext2 = 'Easily schedule appointments or register for healthcare services from home. Stay updated on wait times to plan your arrival.';
