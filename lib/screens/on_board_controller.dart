@@ -2,18 +2,19 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_application_1/screens/splash_screen.dart';
-import 'package:get/get.dart'; // Add this import for the Get package
+import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
   final pageController = PageController();
-  RxInt currentPageIndex = 0.obs; // Change Rx<int> to RxInt
-  void updatePageIndicator(index) => currentPageIndex.value = index;
+  final currentPageIndex = 0.obs; // Change Rx<int> to RxInt
 
-  void dotNavigationClick(index) {
+  void updatePageIndicator(int index) => currentPageIndex.value = index;
+
+  void dotNavigationClick(int index) {
     currentPageIndex.value = index;
-    pageController.jumpTo(index);
+    pageController.jumpTo(index.toDouble()); // Convert index to double
   }
 
   void nextPage() {
@@ -21,7 +22,11 @@ class OnBoardingController extends GetxController {
       Get.to(SplashScreen());
     } else {
       int page = currentPageIndex.value + 1;
-      pageController.jumpToPage(page);
+      pageController.animateToPage(
+        page,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.ease,
+      );
     }
   }
 

@@ -1,14 +1,16 @@
+// onboarding_screen.dart
+
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/images.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:flutter_application_1/screens/on_board_controller.dart';
 import 'package:flutter_application_1/screens/text.dart';
-import 'package:get/get.dart'; // Add this import for the Get package
-import 'package:smooth_page_indicator/smooth_page_indicator.dart'; // Add this import for smooth_page_indicator package
+import 'package:flutter_application_1/screens/images.dart';
+import 'package:get/get.dart'; 
 
 class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({Key? key}) : super(key: key); // Fix the super key syntax
+  const OnBoardingScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class NavigatingArrow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       right: 24.0,
-      bottom: kBottomNavigationBarHeight- 20, // Add a null check for kBottomNavigationBarHeight
+      bottom: kBottomNavigationBarHeight ,
       child: ElevatedButton(
         onPressed: () => OnBoardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(
