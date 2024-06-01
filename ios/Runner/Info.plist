@@ -52,7 +52,7 @@
 	<key>io.flutter.embedded_views_preview</key>
 	<true/>
 	<key>GMSApiKey</key>
-	<string>YOUR_API_KEY</string>
+	<string></string>
 
 	<!-- Location Permissions -->
 	<key>NSLocationWhenInUseUsageDescription</key>

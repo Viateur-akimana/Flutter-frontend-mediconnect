@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/welcome_screen.dart';
+import 'package:flutter_application_1/screens/home_screen.dart';
+// import 'package:flutter_application_1/screens/welcome_screen.dart';
 // import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
@@ -39,9 +40,9 @@ class MediConnectApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: '/ambulance',
       routes: {
-        '/': (context) => WelcomeScreen(),
+        '/': (context) => HomeScreen(),
         '/login': (context) => LoginScreen(),
         '/register': (context) => RegisterScreen(),
         '/profile': (context) => ProfileScreen(),
