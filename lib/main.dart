@@ -7,6 +7,7 @@ import 'package:flutter_application_1/screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
 import 'screens/profile_screen.dart';
+import 'screens/profile_settings_screen.dart';
 import 'screens/notifications_screen.dart';
 import 'screens/activity_screen.dart';
 import 'screens/chatbot_screen.dart';
@@ -46,6 +47,7 @@ class MediConnectApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/register': (context) => RegisterScreen(),
         '/profile': (context) => ProfileScreen(),
+        '/profile-settings':(context) => SettingsScreen(),
         '/notifications': (context) => NotificationsScreen(),
         '/activity': (context) => ActivityScreen(),
         '/chatbot': (context) => ChatbotScreen(),
