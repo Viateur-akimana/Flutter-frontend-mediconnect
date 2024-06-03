@@ -27,6 +27,7 @@ import 'screens/medication_add_manually_screen.dart';
 import 'screens/ambulance_screen.dart';
 import 'screens/ambulance_success_screen.dart';
 import 'screens/driver_details_screen.dart';
+import 'screens/ambulance.dart';
 
 void main() {
   runApp(MediConnectApp());
@@ -41,8 +42,9 @@ class MediConnectApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/ambulance',
+      initialRoute: '/amb',
       routes: {
+        '/amb':(context) => Ambulance(),
         '/': (context) => HomeScreen(),
         '/login': (context) => LoginScreen(),
         '/register': (context) => RegisterScreen(),
