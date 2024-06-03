@@ -47,7 +47,7 @@ class MediConnectApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/register': (context) => RegisterScreen(),
         '/profile': (context) => ProfileScreen(),
-        '/profile-settings':(context) => SettingsScreen(),
+        '/profile-settings':(context) => ProfileSettingsScreen(),
         '/notifications': (context) => NotificationsScreen(),
         '/activity': (context) => ActivityScreen(),
         '/chatbot': (context) => ChatbotScreen(),

@@ -6,11 +6,8 @@ import 'dart:convert';
 import '../widgets/header.dart';
 import '../widgets/footer.dart';
 
-void main() {
-  runApp(MyApp());
-}
 
-class MyApp extends StatelessWidget {
+class ProfileSettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
